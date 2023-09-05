@@ -1,0 +1,352 @@
+<router-outlet></router-outlet>
+<section class="section" #home>
+    <div class="container is-widescreen">
+        <div class="columns is-multiline is-mobile header">
+            <div class="column is-one-quarter  is-centered">
+                <figure class="image is-96x96">
+                    <img src="../assets/img/logo.png" alt="gmndc" />
+                </figure>
+            </div>
+            <div class="column">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger burger" aria-label="menu" data-target="navbarBasicExample"
+                            (click)="expandMenu(navmenu)">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu" #navmenu>
+                        <div class="navbar-end">
+                            <a class="navbar-item" (click)="scroll(home)">
+                                Home
+                            </a>
+                            <a class="navbar-item" (click)="scroll(whoweare)">
+                                Who we are
+                            </a>
+                            <a class="navbar-item" (click)="scroll(whydmndc)">
+                                Why GMnDC
+                            </a>
+                            <a class="navbar-item" (click)="scroll(services)">
+                                Services
+                            </a>
+                            <a class="navbar-item" (click)="scroll(contactus)">
+                                Contact Us
+                            </a>
+                        </div>
+
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+
+        <div class="column">
+            <h1>Global Management<br />
+                and Development Consultants
+            </h1>
+            <h1 class="title-lg">GMnDC</h1>
+            <h4 class="subtitle is-4 subheading">To be the leading and most trusted consulting service provider in Sri
+                Lanka.</h4>
+            <img class="image spacer-lg" src="../assets/img/vision.png" alt="Global Management
+            and Development Consultants" />
+        </div>
+
+
+        <div class="columns spacer-xl is-vcentered">
+            <div class="column is-one-fourth  has-text-right ">
+                <h1>Our</h1>
+                <h1 class="subtitle is-1 cursive primary-text">Mission</h1>
+            </div>
+            <div class="column is-half">
+                <h3 class="subtitle is-5 subheading">Support development and business ventures to achieve their results
+                    and
+                    expectations by providing effective, <br />
+                    efficient and sustainable solutions and capacity building. </h3>
+            </div>
+            <div class="column is-one-quarter">
+                <img class="image" src="../assets/img/mission.png" alt="Global Management
+                and Development Consultants" />
+            </div>
+        </div>
+
+        <div class="columns spacer-xl">
+            <div class="column is-10 is-offset-1">
+                <div class="columns">
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile">
+                            <div class="column  is-2 has-text-centered">
+                                <i class="primary-text title is-1 fas fa-users"></i>
+                            </div>
+                            <div class="column is-9">
+                                <h6 class="subtitle is-5 primary-text">Clients First </h6>
+                                <p>Put our client’s needs and their satisfaction first and foremost </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile ">
+                            <div class="column is-2 has-text-centered">
+                                <i class="primary-text title is-1 fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div class="column is-9">
+                                <h6 class="subtitle is-5 primary-text">Value for money </h6>
+                                <p>We are dedicated to achieve maximum value for scarce resources that our clients
+                                    invest </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns spacer-lg">
+
+            <div class="column is-10 is-offset-1">
+                <div class="columns">
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile">
+                            <div class="column is-2 has-text-centered">
+                                <i class="title is-1 primary-text fas fa-hands-helping"></i>
+                            </div>
+                            <div class="column is-three-quarters">
+                                <h6 class="subtitle is-5 primary-text">Trust </h6>
+                                <p>We recognize that our most important earning is trust trust </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile">
+                            <div class="column is-2 has-text-centered">
+                                <i class="title is-1 primary-text fas fa-laptop-code"></i>
+                            </div>
+                            <div class="column is-three-quarters">
+                                <h6 class="subtitle is-5 primary-text">Change for development </h6>
+                                <p>Put our client’s needs and their satisfaction first and foremost </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns spacer-lg">
+            <div class="column is-10 is-offset-1">
+                <div class="columns">
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile">
+                            <div class="column is-2 has-text-centered">
+                                <i class="title is-1 primary-text fas fa-users-cog"></i>
+                            </div>
+                            <div class="column is-three-quarters">
+                                <h6 class="subtitle is-5 primary-text">Diversity </h6>
+                                <p>We work for everyone irrespective of their religion, ethnicity, age, economic and
+                                    socio-cultural status </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half ">
+                        <div class="columns is-vcentered  is-mobile">
+                            <div class="column is-2 has-text-centered">
+                                <i class="title is-1 primary-text fas fa-award"></i>
+                            </div>
+                            <div class="column is-three-quarters">
+                                <h5 class="subtitle is-5 primary-text">Committed to Quality</h5>
+                                <p>We are committed to continually improving our professional consulting services to
+                                    meet and exceed the needs of our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section mid-1">
+    <div class="container is-widescreen">
+
+        <div class="columns spacer-xl is-vcentered" #whoweare>
+            <div class="column is-5 is-offset-1">
+                <h4 class="subtitle is-4">Who We are</h4>
+                <p class="spacer-md">Global Management and Development Consultants (GMnDC) is a development and
+                    management consulting firm,
+                    helping both profit oriented and non for profit organizations to be significantly more efficient and
+                    effective in all operations. We provide technical supports for and solutions for all management
+                    aspects
+                    from planning, monitoring, evaluation and implementation of technological and organizational
+                    improvements.
+                </p>
+                <p class="spacer-md">
+                    GMnDC facilitates, organizational enhancements through multi-faceted interventions leading to
+                    Business
+                    Improvement through consulting, people, process and operational improvements. We carefully select
+                    consultants from our pool of resources in order to offer our customers foremost quality of expertise
+                    together with extensive experience of industry practices. Our consultants have substantial track
+                    record of executing major
+                    consulting assignments involving organization wide development in Sri Lanka and overseas. </p>
+            </div>
+            <div class="column is-5 is-offset-1">
+                <img src="../assets/img/who-we-are.png" class="image" />
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="section mid-2">
+    <div class="container is-widescreen">
+
+
+        <div class="columns spacer-xxl is-vcentered" #whydmndc>
+            <div class="column is-5 is-offset-1">
+                <img src="../assets/img/why-dmndc.png" class="image" />
+            </div>
+            <div class="column is-5 is-offset-1">
+                <h4 class="subtitle is-4">Why GMnDC </h4>
+                <p class="spacer-md">GMnDC recognizes the importance of economic and social development, and we
+                    contribute to its realisation
+                    in many ways. In this context we have a responsibility to encourage and support development that can
+                    be sustained environmentally,
+                    socially and economically for the lasting benefit of those involved. We are committed to continually
+                    improving our professional
+                    consulting services to meet and exceed the needs of our clients. We always achieve our aims through.
+                </p>
+                <ul class="spacer-md listed-item">
+                    <li>Hiring or subcontracting professionals with a demonstrated high skill level in areas of
+                        expertise that match the services provided for clients</li>
+                    <li>Providing a learning environment where the growth and development of our consultants is actively
+                        encouraged and supported</li>
+                    <li>Advancing our national and international capabilities by sharing our experiences, knowledge and
+                        resources among and between our resource persons</li>
+                    <li>Measuring our progress against meaningful targets</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns spacer-xl" #services>
+            <div class="column is-10 is-offset-1">
+                <h4 class="subtitle is-4 has-text-centered">Our Services</h4>
+                <p class="spacer-md">
+                    GMnDC is a trusted consulting partner to organizations of all sizes from small to start-ups to large
+                    organizations, national and international projects and programmes. GMnDS works with organizations
+                    across various industries both in development and business sector for enterprise-wide business
+                    process process improvements. GMnDC has designed its offerings, to help organizations align their
+                    strategic objectives with day-to-day business and operational goals. Our services aid companies to
+                    reduce cycle time, increase productivity and improve quality of service delivery and processes.
+                </p>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1">
+                <ul class="spacer-md listed-item">
+                    <li>IT Consulting</li>
+                    <li>Software development and management </li>
+                    <li>Systems integration / customization </li>
+                    <li>Development of Electronic Information Management system </li>
+                    <li>Development of Manual Information Management Systems </li>
+                    <li>Development of Strategic plans and Business Plans </li>
+                    <li>Development of Monitoring and Evaluation plans implementation supports </li>
+                    <li>Project evaluation including midterm and end line reviews </li>
+                    <li>Conducting Baseline and end line survey</li>
+                    <li>Social and Medical Research</li>
+                    <li>Statistical supports including data analysis </li>
+                    <li>Training need Assessment and Identification</li>
+                    <li>Conducting Training/ Programs </li>
+                </ul>
+            </div>
+            <div class="column is-5 is-offset-1">
+                <img src="../assets/img/our-services.png" alt="GMNDC Services" />
+            </div>
+        </div>
+
+        <div class="columns spacer-xl is-vcentered" #contactus>
+            <div class="column is-5 is-offset-1">
+                <img src="../assets/img/contact-us.png" alt="Contact GMNDC" />
+            </div>
+
+            <div class="column is-4 is-offset-1">
+
+
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-info" type="text" required placeholder="Name *" [(ngModel)]="name">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-info" type="email" required placeholder="Email *" [(ngModel)]="email"
+                            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-info" placeholder="Type your message here"
+                            [(ngModel)]="message"></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-link" (click)="sendEmail()">
+                            <i class="fas fa-paper-plane">&nbsp; </i> Send </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section is-paddingless footer">
+    <div class="container is-widescreen">
+        <div class="columns ">
+            <div class="column spacer-xxxxl">
+                <img src="../assets/img/footer.png" alt="Contact GMNDC" />
+            </div>
+            <div class="column spacer-xxxxl is-mobile">
+                <p class="spacer-md">Global Management and Development Consultants</p>
+                <p>Address: - 61/8,</p>
+                <p>Ranala Road, </p>
+                <p>Habarakada, </p>
+                <p>Sri Lanka</p>
+
+            </div>
+            <div class="column spacer-xxxxl is-mobile">
+                <p class="spacer-md">Telephone:- +94771652224/+94112751887</p>
+                <p class="spacer-md">E-mail:- info@gmndc.lk</p>
+                <p>Website:- www.gmndc.lk</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="social-area">
+    <ul>
+        <li>
+            <a class="twitter"></a>
+        </li>
+        <li>
+            <a class="facebook"></a>
+        </li>
+        <li>
+            <a class="instagram"></a>
+        </li>
+        <li>
+            <a class="linkedin"></a>
+        </li>
+    </ul>
+</div>
+
+<div class="navigator">
+    <a (click)="scroll(home)">TOP</a>
+</div>
