@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: planning-ingress-frontend-new
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    cert-manager.io/cluster-issuer: planning-letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: planning-web-new-service
+                port:
+                  number: 80
+  tls:
+  - hosts:
+    - planningtool.ncinga.net
+    secretName: planning-letsencrypt-certificate-tls

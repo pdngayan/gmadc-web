@@ -1,0 +1,2 @@
+imagePullPolicy: Always
+imagepullsecrects: my-registry-secret

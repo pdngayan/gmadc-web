@@ -1,0 +1,2 @@
+imagePullPolicy: IfNotPresent
+imagepullsecrects: my-registry-secret

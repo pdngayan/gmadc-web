@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gmndc-web-deployment
+  labels:
+    app: gmndc-web
+spec:
+  selector:
+    matchLabels:
+      app: gmndc-web
+  template:
+    metadata:
+      labels:
+        app: gmndc-web
+      annotations:
+        linkerd.io/inject: enabled  
+    spec:
+      containers:
+       - name: gmndc-web
+         image: pdngayan1/gmndc-web:v1
+         imagePullPolicy: {{.Values.imagePullPolicy}}
+      imagePullSecrets:
+      - name: {{.Values.imagepullsecrects}}
