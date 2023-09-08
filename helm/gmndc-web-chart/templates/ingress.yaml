@@ -2,14 +2,16 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: gmndc-ingress-web
+  namespace: gmndc
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/use-regex: "true"
-    cert-manager.io/cluster-issuer: gmndc-letsencrypt-prod
+    cert-manager.io/cluster-issuer: planning-letsencrypt-prod
 spec:
   ingressClassName: nginx
   rules:
-    - http:
+    - host: gmndc.lk
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -21,4 +23,4 @@ spec:
   tls:
   - hosts:
     - gmndc.lk
-    secretName: gmndc-letsencrypt-certificate-tls
+    secretName: planning-letsencrypt-certificate-tls
