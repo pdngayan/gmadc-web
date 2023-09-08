@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: build and deploy
-          uses: mr-smithers-excellent/docker-build-push@v6
-          with:
-            image: pdngayan1/gmndc-web
-            tags: v1
-            registry: docker.io
-            username: ${{ secrets.DOCKERHUB_USERNAME }}
-            password: ${{ secrets.DOCKERHUB_TOKEN }}
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: pdngayan1/gmndc-web
+          tags: v1
+          registry: docker.io
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
