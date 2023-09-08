@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: planning-ingress-frontend-new
+  name: gmndc-ingress-web
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/use-regex: "true"
-    cert-manager.io/cluster-issuer: planning-letsencrypt-prod
+    cert-manager.io/cluster-issuer: gmndc-letsencrypt-prod
 spec:
   ingressClassName: nginx
   rules:
@@ -15,10 +15,10 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: planning-web-new-service
+                name: gmndc-web-service
                 port:
                   number: 80
   tls:
   - hosts:
-    - planningtool.ncinga.net
-    secretName: planning-letsencrypt-certificate-tls
+    - gmndc.lk
+    secretName: gmndc-letsencrypt-certificate-tls
